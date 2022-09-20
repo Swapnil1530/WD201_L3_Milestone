@@ -20,9 +20,7 @@ const todoList = () => {
   }
 
   const toDisplayableList = (list) => {
-    return list
-      .map(
-        (todo) =>
+    return list.map((todo) =>
           `${todo.completed ? "[x]" : "[ ]"} ${todo.title} ${
             todo.dueDate == today ? "" : todo.dueDate
           }`
